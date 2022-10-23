@@ -1,0 +1,31 @@
+body{
+    position: relative;
+    top: 5cm;
+    background-color: cornflowerblue;
+    font-family: "Calibri";
+    font-size:x-large;
+    text-align: center;
+}
+
+
+h1
+{
+    color:gold;
+}
+
+
+#time
+{
+    margin-top: 10px;
+    color:gold;
+}
+
+button{
+    background-color: cornflowerblue;
+    color: gold;
+    font-size: x-large;
+    margin-top: 10px;
+    height: 45px;
+    width: 90px;
+    border-radius: 9%;
+}
