@@ -33,6 +33,7 @@ function reset(){
     millisec = 0;
     sec = 0;
     min = 0;
+    clearInterval(myInterval);
     myInterval = null;
     document.getElementById("time").innerHTML = "00 : 00.00";
 }
