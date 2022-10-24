@@ -2,6 +2,7 @@ let millisec = 0;
 let sec = 0;
 let min = 0;
 var myInterval = null;
+var isRunning = false;
 
 function start(){
 
@@ -21,12 +22,15 @@ function start(){
 }
 
 document.getElementById("start").addEventListener("click", function(){
+    if(isRunning !== false) return;
     myInterval = setInterval(start, 10);
+    isRunning = true;
 })
 
 document.getElementById("stop").addEventListener("click", function(){
     clearInterval(myInterval);
     myInterval = null;
+    isRunning = false;
 })
 
 function reset(){
@@ -35,5 +39,6 @@ function reset(){
     min = 0;
     clearInterval(myInterval);
     myInterval = null;
+    isRunning = false;
     document.getElementById("time").innerHTML = "00 : 00.00";
 }
